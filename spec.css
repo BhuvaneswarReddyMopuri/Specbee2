@@ -1,0 +1,140 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header */
+  .header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    color: #666;
+  }
+  
+  /* Speaker Slider */
+  .speaker-slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 20px;
+    justify-content: center;
+  }
+  
+  .speaker-card {
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .speaker-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .speaker-card__image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .speaker-card__company {
+    color: #777;
+    font-size: 0.9rem;
+  }
+  
+  /* Speaker Popup */
+  .speaker-popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+
+  /* Popup content */
+  .speaker-popup__content {
+    position: relative;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+  }
+  .speaker-popup__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+
+  
+  .speaker-popup__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .speaker-popup__info {
+    text-align: left;
+  }
+  
+  
+  
+  
+  .speaker-popup__name {
+    font-size: 1.5rem;
+  }
+  
+  .speaker-popup__role, .speaker-popup__company {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .program-button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+
+  
